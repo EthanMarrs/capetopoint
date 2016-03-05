@@ -10,7 +10,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="css/lightbox.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,66 +20,74 @@
     <![endif]-->
 </head>
 <body>
+<div class="container">
     <div class="row">
-        <nav class="navigation">
+        <div class="col-sm-12">
+            <img class="logo img-responsive" src="images/logo.png">
+        </div>
 
+    </div>
+    <div class="row">
+        <nav class="col-md-12 navigation">
+            <ul class="list-inline v-align text-center grey-font">
+                <li>Home</li>
+                <li>Tours</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
         </nav>
     </div>
-    <div class="row no-padding">
-        <div class="col-md-12 text-center" id="cover">
-
-      <!--<div class="col-md-6">
-          <!--<img id="logo" src="images/logo.png"></img>-->
-
-        </div>
-      <!--<nav class="col-md-6">
-      <h1 class="large-text">Cape to Point</h1>
-        <ul class="list-inline text-center">
-          <li>Home</li>
-          <li>About</li>
-          <li>Tours</li>
-          <li>Contact</li>
-        </ul>
-      </nav>-->
+</div>
+<div class="row">
+    <div class="col-sm-12 text-center" id="cover">
+        <h1 class="large-text v-align">Explore Cape Town.</br>The right way.</h1>
     </div>
-  </div>
-  <div class="row text-row">
+    <!--<nav class="col-md-6">
+    <h1 class="large-text">Cape to Point</h1>
+
+    </nav>-->
+</div>
+<div class="row text-row">
     <div class="col-md-offset-3 col-md-6 text-center">
-      <h1 class="grey">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt vitae purus ac venenatis. Sed posuere facilisis convallis. Suspendisse ligula urna, tempor at porttitor eget, porttitor eget velit. Fusce congue tortor non pretium facilisis. Ut vitae sem non metus posuere lacinia nec ut turpis. Nulla laoreet metus nec eros hendrerit, at vestibulum nibh cursus.
-      </h1>
+        <h1 class="grey-font">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt vitae purus ac venenatis. Sed posuere
+            facilisis convallis. Suspendisse ligula urna, tempor at porttitor eget, porttitor eget velit. Fusce congue
+            tortor non pretium facilisis. Ut vitae sem non metus posuere lacinia nec ut turpis. Nulla laoreet metus nec
+            eros hendrerit, at vestibulum nibh cursus.
+        </h1>
     </div>
-  </div>
+</div>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery-2.2.1.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-  <!-- Script to automate cover change -->
-  <script src="js/cover.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Script to automate cover change -->
+<script src="js/cover.js"></script>
+<script src="js/lightbox.min.js"></script>
 </body>
 <footer>
-  <div class="">
-    <div class="row footer">
-      <div class="col-md-offset-3 col-md-3">
-        <ul class="text-center list">
-          <li>Home</li>
-          <li>About</li>
-          <li>Tours</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <ul class="text-center list">
-          <li>Something</li>
-          <li>Something</li>
-          <li>Something</li>
-          <li>Something</li>
-        </ul>
-      </div>
+    <div class="">
+        <div class="row footer">
+            <div class="col-md-offset-3 col-md-3 v-align">
+                <ul class="text-center list">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Tours</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="col-md-3 v-align">
+                <ul class="text-center list">
+                    <li>Something</li>
+                    <li>Something</li>
+                    <li>Something</li>
+                    <li>Something</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row footer-bottom">
+        </div>
     </div>
-    <div class="row footer-bottom">
-    </div>
-  </div>
 </footer>
 </html>

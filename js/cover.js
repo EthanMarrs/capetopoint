@@ -1,5 +1,5 @@
 var count = 1;
-var max = 5;
+var max = 4;
 
 function changeBackground() {
     if (count < max) {
