@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cape to Point</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <img class="logo img-responsive" src="images/logo.png">
+        </div>
+
+    </div>
+    <div class="row">
+        <!--<div class="col-md-3">-->
+        <!--<img class="logo img-responsive" src="images/logo.png">-->
+        <!--</div>-->
+        <nav class="col-md-9 navigation">
+            <ul class="list-inline v-align text-center grey-font">
+                <li>Home</li>
+                <li>Tours</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 text-center" id="cover">
+    </div>
+</div>
+<div class="container">
+    <div class="row text-row">
+        <div class="col-md-3">
+            <h2 class="no-top-pad navy-font lato">Summary</h2>
+            <p>
+                R 500 per person </br>
+                &plusmn; 5 hours </br>
+                3 &ndash; 5 guests
+            </p>
+            </br>
+            <h2 class="no-top-pad navy-font lato">Times</h2>
+            <p>
+                Weekends 9:00 &ndash; 14:00 </br>
+                Weekdays 12:00 &ndash; 17:00
+            </p>
+        </div>
+        <div class="col-md-9">
+            <ol class="breadcrumb lato text-normal">
+                <li>Tours</li>
+                <li>Wine Tours</li>
+                <li>Far South Wine Tour</li>
+            </ol>
+            <h1 class="medium-text navy-font">Far South Wine Tour</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt vitae purus ac venenatis. Sed
+                posuere
+                facilisis convallis. Suspendisse ligula urna, tempor at porttitor eget, porttitor eget velit. Fusce
+                congue
+                tortor non pretium facilisis. Ut vitae sem non metus posuere lacinia nec ut turpis. Nulla laoreet metus
+                nec
+                eros hendrerit, at vestibulum nibh cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt vitae purus ac venenatis. Sed
+                posuere
+                facilisis convallis. Suspendisse ligula urna, tempor at porttitor eget, porttitor eget velit. Fusce
+                congue
+            </p>
+            <ul class="nav nav-tabs lato text-normal">
+                <li role="presentation" class="tab-choice active"><a>Itinerary</a></li>
+                <li role="presentation" class="tab-choice"><a>Gallery</a></li>
+                <li role="presentation" class="tab-choice"><a>Map</a></li>
+            </ul>
+            <div id="itinerary" class="tab">
+
+            </div>
+            <div id="gallery" class="hidden tab">
+
+            </div>
+            <div id="map" class="hidden tab">
+
+            </div>
+            <script>
+                var map;
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: -34.397, lng: 150.644},
+                        zoom: 8
+                    });
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmL9CWg6mPpY8Mli8rEhzZI3XAWdWEdg0&callback=initMap"
+                    async defer></script>
+        </div>
+
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/tourTab.js"></script>
+</body>
+<footer>
+    <div class="">
+        <div class="row footer">
+            <div class="col-md-offset-3 col-md-3 v-align">
+                <ul class="text-center list">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Tours</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="col-md-3 v-align">
+                <ul class="text-center list">
+                    <li>Something</li>
+                    <li>Something</li>
+                    <li>Something</li>
+                    <li>Something</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row footer-bottom">
+        </div>
+    </div>
+</footer>
+</html>

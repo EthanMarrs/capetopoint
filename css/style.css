@@ -10,6 +10,11 @@ footer {
     font-family: 'Lato';
 }
 
+p {
+    font-family: 'Lato';
+    font-size: 22px;
+}
+
 @font-face {
     font-family: 'ashburylight';
     src: url('../fonts/ashburylig-webfont.eot');
@@ -37,6 +42,10 @@ footer {
     font-size: 80px;
 }
 
+.medium-text {
+    font-size: 60px;
+}
+
 nav {
     font-family: 'Lato';
     font-size: 35px;
@@ -53,6 +62,30 @@ nav {
     transition: background 1s linear;
 }
 
+#tour {
+    font-family: 'ashburylight';
+    background-image: url('../images/cover/1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 700px;
+    color: white;
+}
+
+.bottom-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.tour-summary {
+    font-family: 'lato';
+    font-size: 20px;
+}
+
 .text-row {
     font-family: 'ashburylight';
     padding-top: 3%;
@@ -63,8 +96,16 @@ nav {
     margin: 0 auto;
 }
 
+.no-top-pad {
+    margin-top: 0px;
+}
+
 .navy-font {
     color: #22356E;
+}
+
+.lato {
+    font-family: "Lato";
 }
 
 .navy {
@@ -122,7 +163,14 @@ nav {
 .strong {
     font-family: 'ashburylight';
     font-size: 40px;
+}
 
+.ashbury {
+    font-family: 'ashburylight';
+}
+
+.text-normal {
+    font-size: 22px;
 }
 
 .btn {
@@ -145,4 +193,12 @@ nav {
 
 #logo {
     width: 20%;
+}
+
+.nav-tabs > li > a {
+    color: #22356E;
+}
+
+#map {
+    height: 500px;
 }
