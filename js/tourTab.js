@@ -7,4 +7,5 @@ $(".tab-choice").on("click", function() {
     $(".nav-tabs > li").removeClass("active");
     $(this).addClass("active");
     $("#" + $(this).children(":first").text().toLowerCase()).removeClass("hidden");
+    google.maps.event.trigger(map, 'resize');
 });
