@@ -32,9 +32,9 @@
     <nav class="col-md-9 navigation hidden-xs">
         <ul class="list-inline text-center">
             <li class="pad-right pad-menu">Home</li>
-            <li class="pad-right pad-menu">Day Tours</li>
-            <li class="pad-right pad-menu">Overnight Tours</li>
-            <li class="pad-right pad-menu">Custom Tours</li>
+            <li class="pad-right pad-menu">Tours <span class="caret"></span></li>
+            <!--<li class="pad-right pad-menu">Overnight Tours</li>-->
+            <!--<li class="pad-right pad-menu">Custom Tours</li>-->
             <li class="pad-right pad-menu">Your Guide</li>
             <li class="pad-menu">Contact</li>
         </ul>
@@ -80,7 +80,7 @@
                 Discover three prime historic wine estates of Somerset West, located less than one hour away from the city of Cape Town. This original Cape settler destination is one of the oldest wine producing regions of the Cape. Like many other winelands regions of the Cape, this land formed part of various pockets of lands that was distributed to the earliest Cape Dutch to the Western Cape. The Governor of the Cape at the time, Simon van der Stel made his mark in this region after his discovery of the ideal agricultural value and superior wine terroir of the Helderberg and Schaapenberg Mountains. Viticulture and botany history was made as 1820 settlers arrived on these mountain slopes, where magnificent homesteads were built and fine agricultural and wine making traditions are passed on to new generations today. Come and enjoy the rich cultural heritage of this unique wine region.
             </p>
             <div class="row">
-                <button type="button" class="btn btn-default btn-lg pull-right lato">Make Booking</button>
+                <a href="https://docs.google.com/forms/d/1oBiKy6R40LPJrpnAVXPwzexvSjYPaqJZu3ntvObSUhw/viewform?entry.292442693&entry.1924890330&entry.1572461129&entry.1228721249=Somerset+West+Three+Estates+Full+Day+Tour&entry.116623413&entry.539685952" target="_blank" role="button" class="btn btn-default btn-lg pull-right lato">Make Booking</a>
             </div>
 
 
@@ -118,18 +118,42 @@
                     Travel along the coastal Indian Ocean route via Stellenbosch to Somerset West. Return to along the N2 freeway, past the local townships of Langa and Guguletu, the University of Cape Town, Ou Kaapse weg for views of the Cape Floral Kingdom. Upon return you may pass the False Bay village of Fish Hoek, and location of the historic archeological site at Peers Cave, en route to the Far South Peninsula with views of the Atlantic Ocean and Kommetjie Lighthouse.
                 </p>
             </div>
-            <div id="gallery" class="hidden tab">
-
+            <div id="gallery" class="hidden tab text-center">
+                <a href="images/cover/1.jpg" data-lightbox="Somerset West Three Estates Full Day Tour"><img class="thumb thumb-margin-right" src="images/cover/1.jpg"></a>
+                <a href="images/cover/2.jpg" data-lightbox="Somerset West Three Estates Full Day Tour"><img class="thumb thumb-margin-right" src="images/cover/2.jpg"></a>
+                <a href="images/cover/3.jpg" data-lightbox="Somerset West Three Estates Full Day Tour"><img class="thumb" src="images/cover/3.jpg"></a>
+                <a href="images/cover/1.jpg" data-lightbox="Somerset West Three Estates Full Day Tour"><img class="thumb thumb-margin-top thumb-margin-right" src="images/cover/1.jpg"></a>
+                <a href="images/cover/2.jpg" data-lightbox="Somerset West Three Estates Full Day Tour"><img class="thumb thumb-margin-top thumb-margin-right" src="images/cover/2.jpg"></a>
+                <a href="images/cover/3.jpg" data-lightbox="Somerset West Three Estates Full Day Tour"><img class="thumb thumb-margin-top" src="images/cover/3.jpg"></a>
+                <a href="images/cover/1.jpg" data-lightbox="Somerset West Three Estates Full Day Tour"><img class="thumb thumb-margin-top thumb-margin-right" src="images/cover/1.jpg"></a>
+                <a href="images/cover/2.jpg" data-lightbox="Somerset West Three Estates Full Day Tour"><img class="thumb thumb-margin-top thumb-margin-right" src="images/cover/2.jpg"></a>
+                <a href="images/cover/3.jpg" data-lightbox="Somerset West Three Estates Full Day Tour"><img class="thumb thumb-margin-top" src="images/cover/3.jpg"></a>
             </div>
             <div id="map" class="hidden tab">
 
             </div>
             <script>
                 var map;
+                var latLng = [-34.071874, 18.888708];
+                var markers = [
+                    ["Lourensford Wine Estate", -34.071874, 18.888708],
+                    ["Morgenster Wine Estate", -34.083749, 18.884953 ],
+                    ["Vergelegen Estate", -34.076075, 18.889790]
+                ];
+
                 function initMap() {
                     map = new google.maps.Map(document.getElementById('map'), {
-                        center: {lat: -34.397, lng: 150.644},
-                        zoom: 8
+                        center: new google.maps.LatLng(latLng[0], latLng[1]),
+                        zoom: 13
+                    });
+
+                    $.each(markers, function(i, val) {
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(val[1], val[2]),
+                            text: val[0]
+                        });
+
+                        marker.setMap(map);
                     });
                 }
             </script>
@@ -146,7 +170,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/lightbox.min.js"></script>
 <script src="js/menu.js"></script>
-<script src="js/tourTab.js"></script>
+<script src="js/tour.js"></script>
 </body>
 <footer>
     <div class="">
@@ -155,10 +179,8 @@
                 <ul class="text-center list">
                     <li>Home</li>
                     <li>Tours</li>
-                    <li>Day Tours</li>
-                    <li>Overnight Tours</li>
-                    <li>Custom Tours</li>
                     <li>Your Guide</li>
+                    <li>Contact</li>
                 </ul>
             </div>
             <div class="col-md-3 v-align">

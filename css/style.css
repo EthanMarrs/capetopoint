@@ -47,8 +47,9 @@ p {
 }
 
 .tab {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    border: 1px solid #DDDDDD;
+    border-top: 0;
+    padding: 2%;
 }
 
 .list-inline {
@@ -76,6 +77,10 @@ nav > ul > li:hover {
     /*border-radius: 3px 3px 3px;*/
     /*border-bottom: 4px solid #22356E;*/
     cursor: pointer;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover  {
+    color: #22356E;
 }
 
 .pad-right {
@@ -146,6 +151,10 @@ nav > ul > li:hover {
 
 .lato {
     font-family: "Lato";
+}
+
+.caret {
+    border-width: 7px;
 }
 
 .navy {
@@ -270,5 +279,17 @@ nav > ul > li:hover {
 }
 
 #map {
-    height: 500px;
+    height: 600px;
+}
+
+.thumb {
+    width: 30%;
+}
+
+.thumb-margin-right {
+    margin-right: 3%;
+}
+
+.thumb-margin-top {
+    margin-top: 3%;
 }

@@ -8,4 +8,5 @@ $(".tab-choice").on("click", function() {
     $(this).addClass("active");
     $("#" + $(this).children(":first").text().toLowerCase()).removeClass("hidden");
     google.maps.event.trigger(map, 'resize');
+    map.setCenter(new google.maps.LatLng(latLng[0], latLng[1]));
 });
