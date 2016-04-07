@@ -68,7 +68,7 @@ ul {
 
 nav > ul > li {
     /*border-bottom: 4px solid white;*/
-    font-size: 28px;
+    font-size: 21px;
     font-weight: 500;
 }
 
@@ -154,7 +154,7 @@ nav > ul > li:hover {
 }
 
 .caret {
-    border-width: 7px;
+    border-width: 5px;
 }
 
 .navy {
