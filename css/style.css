@@ -101,6 +101,11 @@ nav > ul > li:hover {
     overflow: hidden;
 }
 
+.quote {
+    font-family: 'ashburylight';
+    font-size: 30px;
+}
+
 #cover {
     font-family: 'ashburylight';
     width: 100%;
