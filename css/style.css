@@ -243,6 +243,19 @@ nav ul li {
     cursor: pointer;
 }
 
+#price-slider {
+    font-family: 'Lato';
+}
+
+.price {
+    font-size: 30px;
+    color: #22356E;
+}
+
+.spacer {
+    margin-top: 30px;
+}
+
 .navigation {
     /*top: 0;*/
     /*left: 0;*/
@@ -260,9 +273,13 @@ nav ul li {
     font-size: 25px;
     padding-top: 2%;
     padding-bottom: 2%;
+    margin-bottom: 0;
+    border-color: #22356E;
 }
 
 .footer-bottom {
+    margin-top: 0;
+    border-color: #22356E;
     background-color:  #18254e;
     padding-top: 1%;
     padding-bottom: 1%;
