@@ -1,44 +1,62 @@
 <header class="site-header">
-  <div class="row">
-    <div class="col-sm-12">
-      <img class="logo img-responsive" src="{{ site.github.url }}/images/logo-cropped.png">
+    <div class="row">
+        <div class="col-sm-12">
+            <img class="logo img-responsive" src="/images/logo-cropped.png">
+        </div>
     </div>
-  </div>
-  <div class="row">
-    <nav class="col-md-9 navigation hidden-xs">
-      <ul class="list-inline text-center">
-        <li class="pad-right pad-menu"><a>Home</a></li>
-        <li class="pad-right pad-menu"><a>Day Tours <span class="caret"></span></a>
-          <ul class="list-unstyled">
-            <li><a>Somerset West Three Estates Tour</a></li>
-            <li><a>Stellenbosh Franshhoek Tour</a></li>
-          </ul>
-        </li>
-        <li class="pad-right pad-menu"><a>Overnight Tours <span class="caret"></span></a>
-          <ul id="egg" class="list-unstyled">
-            <li><a>Somerset West Three Estates Tour</a></li>
-            <li><a>Stellenbosh Franshhoek Tour</a></li>
-          </ul>
-        </li>
-        <li class="pad-right pad-menu"><a>Special Interest <span class="caret"></span></a></li>
-        <li class="pad-right pad-menu"><a>Custom Tours</a></li>
-        <li class="pad-right pad-menu"><a>Your Guide</a></li>
-        <li class="pad-menu"><a>Contact</a></li>
-      </ul>
-    </nav>
 
-    <nav class="col-md-12 navigation visible-xs-block">
-      <span id="hamburger" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-      <ul id="mobile-menu" class="hidden list-unstyled">
-        <li class="pad-left">Home</li>
-        <li class="pad-left">Tours</li>
-        <li class="pad-left">Day Tours</li>
-        <li class="pad-left">Overnight Tours</li>
-        <li class="pad-left">Special Interest</li>
-        <li class="pad-left">Custom Tours</li>
-        <li class="pad-left">Your Guide</li>
-      </ul>
-    </nav>
-  </div>
+    <div id="menu" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-menubuilder">
+                <div id="menu-container">
+                    <ul id="nav-ul" class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">Day Tours <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Stellenbosch to Franchhoek Full Day Winelands Tour</a></li>
+                                <li><a href="#">Cape Peninsula Private Selection Day Tour</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">Overnight Tours <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">Special Interest <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Custom Tours</a></li>
+                        <li><a href="#">Your Guide</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<nav class="col-md-12 navigation visible-xs-block">-->
+    <!--<span id="hamburger" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>-->
+    <!--<ul id="mobile-menu" class="hidden list-unstyled">-->
+    <!--<li class="pad-left">Home</li>-->
+    <!--<li class="pad-left">Tours</li>-->
+    <!--<li class="pad-left">Day Tours</li>-->
+    <!--<li class="pad-left">Overnight Tours</li>-->
+    <!--<li class="pad-left">Special Interest</li>-->
+    <!--<li class="pad-left">Custom Tours</li>-->
+    <!--<li class="pad-left">Your Guide</li>-->
+    <!--</ul>-->
+    <!--</nav>-->
+    <!--</div>-->
 
 </header>
