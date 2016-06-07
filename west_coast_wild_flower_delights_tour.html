@@ -1,0 +1,147 @@
+---
+layout: default
+title: West Coast Wild Flower Delights Overnight Tour | Cape to Point
+---
+
+<div class="row">
+    <div id="cover-wrapper" class="col-sm-12 text-center">
+        <img id="cover"
+             src="images/tours/west-coast-flowers/Westcoast%20Wild%20Flowers.jpg">
+    </div>
+</div>
+<div class="container">
+    <div class="row text-row">
+        <div class="col-md-3">
+            <div>
+                <h2 class="no-top-pad navy-font lato">Price</h2>
+                <p>
+                    Available on enquiry, depending on numbers<br>
+                </p>
+                <br>
+                <br>
+                <h2 class="no-top-pad navy-font lato">Highlights</h2>
+                <p>
+                    Spectacular carpets of wild flowers<br>
+                    West Coast National Park<br>
+                    Floral diversity<br>
+                    Strandloper Beach Seafood Restaurant<br>
+                    Lagoon boat cruise<br>
+                    Wild flower picnic
+                </p>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <ol class="breadcrumb lato text-normal">
+                <li>Tours</li>
+                <li>Overnight Tours</li>
+                <li>West Coast Wild Flower Delights Overnight Tour</li>
+            </ol>
+            <h1 class="medium-text navy-font">West Coast Wild Flower Delights Overnight Tour</h1>
+            <p>
+                Travel from Cape Town and enjoy the charm and beauty of this spectacular wildflowers of the Cape West
+                Coast. This overnight tour will travel through long stretches of colourful carpets of flowers and view
+                the magnificent West Coast National Park and fossil collection of the region.
+                Enjoy the coastal scenery of the coastal town of Langebaan from where the industrial iron ore marine
+                village of Saldanha Bay is visible across the lagoon. Stay in four star accommodation on the Langebaan
+                lagoon and enjoy the seafood feasts caught and prepared by local residents at a beach side restaurants.
+                Enjoy a boat cruise across the Langebaan lagoon to Churchaven for picnic among the wildflowers amid
+                spectacular rock formations and magnificent surroundings of white beaches and turquoise Atlantic Ocean
+                lagoon areas. Travel along the Olifantsriver and experience this unique wine region and special
+                offerings of the hospitable locals and farming communities.
+                This tour that is tailor made to suit the needs of every individual, makes for a memorable West Coast
+                experience of a lifetime.
+            </p>
+            <div class="clearfix">
+                <a href="https://docs.google.com/forms/d/1oBiKy6R40LPJrpnAVXPwzexvSjYPaqJZu3ntvObSUhw/viewform?entry.292442693&entry.1924890330&entry.1572461129&entry.1228721249=Ladies+Full+Day+Pamper+Tour&entry.1886417258&entry.116623413&entry.539685952"
+                   target="_blank" role="button" class="btn btn-default btn-lg pull-right lato">Make Booking</a>
+            </div>
+
+
+            <ul class="nav nav-tabs lato text-normal">
+                <li role="presentation" class="tab-choice active"><a>Overview</a></li>
+                <li role="presentation" class="tab-choice"><a>Gallery</a></li>
+                <li role="presentation" class="tab-choice"><a>Map</a></li>
+            </ul>
+            <div id="overview" class="tab">
+                <h3 class="lato navy-font">Price</h3>
+                <p>Available on enquiry, depending on numbers</p>
+                <h3 class="lato navy-font">Tour includes</h3>
+                <ul class="list-unstyled ul-lato">
+                    <li>Dinner, bed and breakfast</li>
+                    <li>Entry in the West Coast National Park</li>
+                    <li>Pick up and drop off</li>
+                    <li>Wine tasting</li>
+                </ul>
+                <h3 class="lato navy-font">Tour Excludes</h3>
+                <ul class="list-unstyled ul-lato">
+                    <li>Boat cruise</li>
+                    <li>Lunch</li>
+                </ul>
+            </div>
+            <div id="gallery" class="hidden tab text-center">
+                <a href="images/tours/west-coast-flowers/20130901_110011-1.jpg"
+                   data-lightbox="tour"><img
+                        class="thumb thumb-margin-right"
+                        src="images/tours/west-coast-flowers/20130901_110011-1.jpg"></a>
+                <a href="images/tours/west-coast-flowers/IMG_20150829_161412856.jpg"
+                   data-lightbox="tour"><img
+                        class="thumb thumb-margin-right"
+                        src="images/tours/west-coast-flowers/IMG_20150829_161412856.jpg"></a>
+                <a href="images/tours/west-coast-flowers/IMG_20150829_162408236.jpg"
+                   data-lightbox="tour"><img
+                        class="thumb" src="images/tours/west-coast-flowers/IMG_20150829_162408236.jpg"></a>
+                <a href="images/tours/west-coast-flowers/Northern%20Cape%20daisies.jpg"
+                   data-lightbox="tour"><img
+                        class="thumb thumb-margin-top thumb-margin-right"
+                        src="images/tours/west-coast-flowers/Northern%20Cape%20daisies.jpg"></a>
+                <a href="images/tours/west-coast-flowers/Wildflower%20TourKammieskroon%20Namqualand.jpg"
+                   data-lightbox="tour"><img
+                        class="thumb thumb-margin-top thumb-margin-right"
+                        src="images/tours/west-coast-flowers/Wildflower%20TourKammieskroon%20Namqualand.jpg"></a>
+                <a href="images/tours/west-coast-flowers/Westcoast%20Wild%20Flowers.jpg"
+                   data-lightbox="tour"><img
+                        class="thumb thumb-margin-top"
+                        src="images/tours/west-coast-flowers/Westcoast%20Wild%20Flowers.jpg"></a>
+            </div>
+            <div id="map" class="hidden tab">
+
+            </div>
+            <script>
+                var map;
+                var latLng = [-33.154534, 18.167404];
+                var markers = [
+                    ["West Coast National Park", -33.154534, 18.167404],
+                    ["Langebaan", -33.060759, 18.042340],
+                    ["Churchhaven", -33.177366, 18.066689]
+                ];
+
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: new google.maps.LatLng(latLng[0], latLng[1]),
+                        zoom: 11
+                    });
+
+                    $.each(markers, function (i, val) {
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(val[1], val[2]),
+                            text: val[0]
+                        });
+
+                        marker.setMap(map);
+                    });
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmL9CWg6mPpY8Mli8rEhzZI3XAWdWEdg0&callback=initMap"
+                    async defer></script>
+        </div>
+
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.2.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/tour.js"></script>
