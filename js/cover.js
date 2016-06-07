@@ -8,7 +8,7 @@ function changeBackground() {
     else {
         count = 1;
     }
-    $("#cover").attr("src", "/images/cover/" + count + ".jpg");
+    $("#cover").attr("src", "images/cover/" + count + ".jpg");
 }
 
 setInterval(changeBackground, 4000);
