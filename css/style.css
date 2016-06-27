@@ -52,6 +52,10 @@ p {
     font-size: 50px;
 }
 
+.small-text {
+    font-size: 35px;
+}
+
 .tab {
     /*border: 1px solid #DDDDDD;*/
     border-top: 0;
@@ -210,6 +214,7 @@ p {
     width: 100%;
     color: white;
     transition: background 1s linear;
+    z-index: -1000;
 }
 
 #tour {
@@ -289,7 +294,7 @@ p {
 }
 
 .grey {
-    background: #808184;
+    background-color: #F5F5F5;
 }
 
 .no-padding {
@@ -354,10 +359,6 @@ p {
 
 .list {
     list-style: none;
-}
-
-.grey {
-    color: #9e9e9e;
 }
 
 .strong {
