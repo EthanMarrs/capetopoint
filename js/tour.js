@@ -3,7 +3,6 @@
  */
 
 $(".tab-choice").on("click", function() {
-    console.log("ay");
     $(".tab").addClass("hidden");
     $(".nav-tabs > li").removeClass("active");
     $(this).addClass("active");

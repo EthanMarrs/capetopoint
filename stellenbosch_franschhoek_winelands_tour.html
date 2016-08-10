@@ -15,10 +15,8 @@ title: Stellenbosch to Franschhoek Full Day Winelands Tour| Cape to Point
             <div>
                 <h2 class="no-top-pad navy-font lato">Price</h2>
                 <p>
-                    R960 per person 2 pax
-                    <br> R860 single supplement
-                    <br> R800 per person for four
-                    <br> R700 per person for six
+                    R1200 per person for two
+                    <br>R960 for 3 to six
                 </p>
                 <br>
                 <br>
@@ -71,6 +69,10 @@ title: Stellenbosch to Franschhoek Full Day Winelands Tour| Cape to Point
                 <li role="presentation" class="tab-choice"><a>Map</a></li>
             </ul>
             <div id="overview" class="tab">
+                <h3 class="lato navy-font">Price</h3>
+                <p>R1200 per person for two
+                    <br>R960 for 3 to six
+                </p>
                 <h3 class="lato navy-font">Departs</h3>
                 <p>08h30 &ndash; 09h00</p>
                 <h3 class="lato navy-font">Returns</h3>
@@ -122,7 +124,7 @@ title: Stellenbosch to Franschhoek Full Day Winelands Tour| Cape to Point
                     the fine art and architecture, as well as café society, retail and restaurant industry of what has
                     become a popular wine, literary and art destination on global maps. View the symbolic design
                     features of the French Huguenot Monument, before leaving for your choice of wine estate in the heart
-                    of the famous Mediterranean like terroir and sought after wine growing region.
+                    of the famous Mediterranean like terrain and sought after wine growing region.
                 </p>
             </div>
             <div id="gallery" class="hidden tab text-center">
@@ -133,9 +135,9 @@ title: Stellenbosch to Franschhoek Full Day Winelands Tour| Cape to Point
                    data-lightbox="Somerset West Three Estates Full Day Tour"><img
                         class="thumb thumb-margin-right"
                         src="images/tours/stellenbosch-franschhoek/Cellar.jpg"></a>
-                <a href="images/tours/stellenbosch-franschhoek/Constantia%20winelands.jpg"
+                <a href="images/tours/stellenbosch-franschhoek/Tokara%20Helshoogte%20Franschhoekl.jpg"
                    data-lightbox="Somerset West Three Estates Full Day Tour"><img
-                        class="thumb" src="images/tours/stellenbosch-franschhoek/Constantia%20winelands.jpg"></a>
+                        class="thumb" src="images/tours/stellenbosch-franschhoek/Tokara%20Helshoogte%20Franschhoekl.jpg"></a>
                 <a href="images/tours/stellenbosch-franschhoek/Cuisine.JPG"
                    data-lightbox="Somerset West Three Estates Full Day Tour"><img
                         class="thumb thumb-margin-top thumb-margin-right"
@@ -154,27 +156,27 @@ title: Stellenbosch to Franschhoek Full Day Winelands Tour| Cape to Point
             </div>
             <script>
                 var map;
-                var latLng = [-34.071874, 18.888708];
+                var latLng = [-33.936937, 18.868876];
                 var markers = [
-                    ["Lourensford Wine Estate", -34.071874, 18.888708],
-                    ["Morgenster Wine Estate", -34.083749, 18.884953],
-                    ["Vergelegen Estate", -34.076075, 18.889790]
+                    ["Lanzerac Wine Estate", -33.938439, 18.894194],
+                    ["Waterford Wine Estate", -33.995436, 18.870639],
+                    ["House of JC le Roux", -33.904802, 18.809936]
                 ];
 
                 function initMap() {
                     map = new google.maps.Map(document.getElementById('map'), {
                         center: new google.maps.LatLng(latLng[0], latLng[1]),
-                        zoom: 13
+                        zoom: 11
                     });
 
-//                    $.each(markers, function (i, val) {
-//                        var marker = new google.maps.Marker({
-//                            position: new google.maps.LatLng(val[1], val[2]),
-//                            text: val[0]
-//                        });
-//
-//                        marker.setMap(map);
-//                    });
+                    $.each(markers, function (i, val) {
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(val[1], val[2]),
+                            text: val[0]
+                        });
+
+                        marker.setMap(map);
+                    });
                 }
             </script>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmL9CWg6mPpY8Mli8rEhzZI3XAWdWEdg0&callback=initMap"
