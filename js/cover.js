@@ -1,4 +1,4 @@
-var count = 1;
+var count = 0;
 var max = 6;
 
 function changeBackground() {
@@ -6,7 +6,7 @@ function changeBackground() {
         count++;
     }
     else {
-        count = 1;
+        count = 0;
     }
     $("#cover").attr("src", "images/cover/" + count + ".jpg");
 }
