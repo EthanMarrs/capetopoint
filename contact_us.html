@@ -1,0 +1,31 @@
+---
+layout: default
+title: Contact Us | Cape to Point
+---
+<div class="container">
+    <div class="spacer"></div>
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-6 col-sm-12">
+            <form id="contact-form" method="POST">
+                <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control square" id="inputName">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" name="_replyto" class="form-control square" id="inputEmail">
+                </div>
+                <div class="form-group">
+                    <label for="inputMessage">Message</label>
+                    <textarea rows="3" class="form-control square" id="inputMessage"></textarea>
+                </div>
+                <button class="btn btn-default btn-lg pull-right lato" type="submit" name="action">Submit</button>
+                <script>
+                    var contactform =  document.getElementById('contact-form');
+                    contactform.setAttribute('action', 'http://formspree.io/' + 'annamarie' + '@' + 'capetopoint' + '.' + 'co.za');
+                </script>
+            </form>
+        </div>
+    </div>
+    <div class="spacer"></div>
+</div>

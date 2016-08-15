@@ -286,6 +286,10 @@ p {
     list-style: none;
 }
 
+.square {
+    border-radius: 0;
+}
+
 .strong {
     font-family: 'ashburylight';
     font-size: 40px;
