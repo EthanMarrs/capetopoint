@@ -203,8 +203,8 @@ p {
 
 .nav-links {
     text-align: right;
-    height: 150px;
-    line-height: 150px;
+    height: 65px;
+    line-height: 65px;
     float: right;
 }
 
@@ -213,6 +213,49 @@ p {
     font-size: 17px;
     margin-left: 15px;
     font-weight: 600;
+}
+
+.social-links {
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 5px;
+}
+
+.social-links i {
+  margin-left: 10px;
+  color: #22356E;
+}
+
+.social-links a:hover {
+  text-decoration: none;
+}
+
+.mobile-social-links {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.mobile-social-links i {
+  margin-right: 10px;
+  color: #22356E;
+}
+
+.mobile-social-links a:hover {
+  text-decoration: none;
+}
+
+.footer-social-links {
+  text-align: left;
+  padding-left: 40px;
+}
+
+.footer-social-links i {
+  margin-right: 10px;
+  color: black;
+}
+
+.footer-social-links a:hover {
+  text-decoration: none;
 }
 
 .mobi-links {
