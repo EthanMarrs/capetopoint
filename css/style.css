@@ -215,8 +215,30 @@ p {
     font-weight: 600;
 }
 
+.book-now {
+  padding: 5px;
+  color: white;
+  background-color: #22356E;
+}
+
+.book-now:hover {
+  color: white;
+}
+
+.mobile-book-now {
+  padding: 5px;
+  color: white;
+  background-color: #22356E;
+  margin-right: 10px;
+}
+
 .social-links {
-  text-align: right;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
   margin-top: 30px;
   margin-right: 5px;
 }
@@ -231,7 +253,14 @@ p {
 }
 
 .mobile-social-links {
-  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   margin-bottom: 15px;
 }
 
