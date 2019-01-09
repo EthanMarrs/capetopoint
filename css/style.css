@@ -171,6 +171,14 @@ p {
     background-color: #22356E;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.underline:hover {
+  color: #22356E;
+}
+
 .grey-font {
     color: #808184;
 }

@@ -5,6 +5,25 @@ title: Contact Us | Cape to Point
 <div class="container">
     <div class="spacer"></div>
     <div class="row">
+      <div class="col-lg-offset-3 col-lg-6 col-sm-12">
+          <span class="navy-font text-normal lato">Email: </span><a class="navy-font underline text-normal lato" id="email" target="_top"></a>
+          <br>
+          <span class="navy-font text-normal lato">Tel: </span><a class="navy-font underline text-normal lato" id="tel" target="_top"></a>
+          <div class="spacer"></div>
+          <hr>
+          <script>
+            var mailTo = document.getElementById('email');
+            var address = 'annamarie' + '@' + 'capetopoint' + '.' + 'com';
+            mailTo.setAttribute('href', 'mailto:' + address);
+            mailTo.innerHTML = address;
+            
+            var tel = document.getElementById('tel');
+            tel.setAttribute('href', 'tel:' + '+27' + '83' +'274' + '5073');
+            tel.innerHTML = '083 ' +'274 ' + '5073';
+          </script>
+      </div>
+    </div>
+    <div class="row">
         <div class="col-lg-offset-3 col-lg-6 col-sm-12">
             <form id="contact-form" method="POST">
                 <div class="form-group">
